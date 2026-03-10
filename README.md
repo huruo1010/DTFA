@@ -40,6 +40,7 @@ This model is built in PyTorch 1.10.1 and trained on Ubuntu 20.04 environment (P
    git clone https://github.com/huruo1010/DTFA.git
    cd DTFA
    ```
+
 <hr />
 ## :computer: Usage
 
@@ -57,6 +58,7 @@ We conduct experiments on various weather conditions, The training and testing d
 - As for unified object detection in multiple weather scenes, we combine the above four training sets to form a mixed dataset for model's training, and test its performance on their respective test sets (VOC-Clean-test, VOC-Rain-test, VOC-Haze-test, VOC-Snow-test).
 
 - As for Cross-Domain Generalization Experiments, we adopt the widely used real fog dataset **<u>RTTS</u>** and collect a real rain dataset **<u>RealRain</u>**.
+
 <hr />
 ### 2. Pre-training SPT and IRT
 If you want to pre-train your IRT and SPT teacher, modify `train_annotation_path` and `val_annotation_path` and then run  
@@ -66,12 +68,14 @@ python train/pretrain_IRT.py
 python train/pretrain_SPT.py
 ```
 You can also download the pre-trained weights [here](https://pan.baidu.com/s/12YNdgAKQzqG8vzGBe0xyxQ?pwd=b614)
+
 <hr />
 ### 3. Training AWD
 Modify the pre-trained weights path  `model_path`, `SPT_model_path`, `IRT_model_path`, and annotation paths, and then run
 ```
 python train/train_AWD.py
 ```
+
 <hr />
 ### 4. Testing
 Modify the `model_path` to your pretrained weights path in `yolo.py` and fill in the path of your test sets in `gep_map.py`, then run `get_map.py` by
@@ -80,7 +84,7 @@ Modify the `model_path` to your pretrained weights path in `yolo.py` and fill in
 python get_map.py 
 ```
 
-
+<hr />
 ## :e-mail: Contact
 Should you have any question, please create an issue on this repository or contact at xfwang23@foxmail.com and  liuxmail1220@gmail.com.
 
@@ -90,9 +94,6 @@ Should you have any question, please create an issue on this repository or conta
 We thank [TogetherNet](https://github.com/yz-wang/TogetherNet) and [YOLOXs](https://github.com/Megvii-BaseDetection/YOLOX) for their excellent baseline to promote the development of our work.
 
 <hr />
-
-## :heart: Acknowledgement
-We thank [TogetherNet](https://github.com/yz-wang/TogetherNet), [YOLOXs](https://github.com/Megvii-BaseDetection/YOLOX), and [RDMNet](https://github.com/xfwang23/RDMNet) for their excellent baseline to promote the development of our work.
 
 
 ## Contact
