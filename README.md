@@ -84,9 +84,6 @@ Modify the `model_path` to your pretrained weights path in `yolo.py` and fill in
 python get_map.py 
 ```
 
-<hr />
-## :e-mail: Contact
-Should you have any question, please create an issue on this repository or contact at xfwang23@foxmail.com and  liuxmail1220@gmail.com.
 
 <hr />
 
@@ -96,7 +93,7 @@ We thank [TogetherNet](https://github.com/yz-wang/TogetherNet) and [YOLOXs](http
 <hr />
 
 
-## Contact
+## :e-mail: Contact
 
 If you have questions, you can contact `hu_rui@stu.scu.edu.cn`.
 
