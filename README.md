@@ -42,6 +42,7 @@ This model is built in PyTorch 1.10.1 and trained on Ubuntu 20.04 environment (P
    ```
 
 <hr />
+
 ## :computer: Usage
 
 ### 1. Dataset Preparation
@@ -60,6 +61,7 @@ We conduct experiments on various weather conditions, The training and testing d
 - As for Cross-Domain Generalization Experiments, we adopt the widely used real fog dataset **<u>RTTS</u>** and collect a real rain dataset **<u>RealRain</u>**.
 
 <hr />
+
 ### 2. Pre-training SPT and IRT
 If you want to pre-train your IRT and SPT teacher, modify `train_annotation_path` and `val_annotation_path` and then run  
 ```
@@ -70,6 +72,7 @@ python train/pretrain_SPT.py
 You can also download the pre-trained weights [here](https://pan.baidu.com/s/12YNdgAKQzqG8vzGBe0xyxQ?pwd=b614)
 
 <hr />
+
 ### 3. Training AWD
 Modify the pre-trained weights path  `model_path`, `SPT_model_path`, `IRT_model_path`, and annotation paths, and then run
 ```
@@ -77,6 +80,7 @@ python train/train_AWD.py
 ```
 
 <hr />
+
 ### 4. Testing
 Modify the `model_path` to your pretrained weights path in `yolo.py` and fill in the path of your test sets in `gep_map.py`, then run `get_map.py` by
 
